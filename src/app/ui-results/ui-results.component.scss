@@ -1,0 +1,20 @@
+@import '../../styles/theme';
+
+.viewport {
+    min-height: 100vh;
+
+    .header {
+        color: white;
+        background: rgb(0, 16, 36);
+        background: linear-gradient(180deg, rgb(0, 16, 36) 0%, rgb(24 86 149) 100%);
+        padding: 2rem 0 2rem 0;
+
+        a {
+            color: rgb(114, 164, 217);
+        }
+
+        .header-details {
+            font-size: 1.2rem;
+        }
+    }
+}

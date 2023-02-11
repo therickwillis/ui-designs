@@ -1,0 +1,24 @@
+::placeholder {
+    color:rgb(144, 144, 144);
+}
+
+.result-toolbar {
+    margin-top:2rem;
+    background-color: rgb(18, 61, 103);
+    border-radius: 0.4rem;
+
+    .action-buttons {
+        .btn.btn-secondary {
+            background-color: rgb(100, 141, 189);
+        }
+    }
+
+    .filter {
+        background-color: transparent;
+        color:white;
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        border-radius: 0;
+    }
+}

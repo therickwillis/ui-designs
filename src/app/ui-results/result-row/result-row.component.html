@@ -1,0 +1,7 @@
+<div class="result-row">
+    <div class="fs-4">{{ result.ruleName }}</div>
+    <div>{{result.ruleDescription }}</div>
+    <div *ngFor="let rule of result.rules">
+        <app-result-row-rule [rule]="rule"></app-result-row-rule>
+    </div>
+</div>

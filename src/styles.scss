@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import './styles/theme';
+
+
+html, body {
+    margin:0;
+    padding:0;
+}
+
+html {
+    background-color: $page-background;
+}
+
+a {
+    text-decoration: none;
+}

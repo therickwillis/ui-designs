@@ -1,0 +1,85 @@
+<div class="viewport">
+    <div class="header">
+        <div class="container">
+            <div class="grid">
+                <div class="row">
+                    <div class="col">
+                        <h1>Account Name [52325]</h1>
+                        <h2>iRP 152342-Q_0</h2>
+                    </div>
+                    <h2 class="col text-end pt-2">
+                        <span class="badge rounded-pill text-bg-warning">Referred</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="row header-details">                
+                <div class="col">
+                    <div>
+                        4/1/2023 - 4/1/2024
+                    </div>
+                    <div>
+                        Premium: $52,156
+                    </div>
+                    <div>
+                        Primary State: CO
+                    </div>
+                    <div>
+                        <a href><i class="pi pi-external-link"></i> View in Genesys</a>
+                    </div>
+                </div>
+                <div class="col text-end">
+                    <div>
+                        Primary Contact
+                    </div>
+                    <div>
+                        <a href><i class="pi pi-external-link"></i> View Account</a>
+                    </div>
+                    <div>
+                        <a href><i class="pi pi-external-link"></i> View Coverage Term</a>
+                    </div>
+                </div>
+            </div>
+            <app-result-toolbar></app-result-toolbar>
+        </div>
+    </div>
+    <div class="container">
+
+        <!-- Toolbar -->
+        
+
+        <div class="row mt-4">
+            <div class="col">
+                <h2><i class="pi pi-exclamation-triangle"></i> Failed Rules</h2>
+                <a href>hide justified</a>
+            </div>
+            <div class="col text-end fs-4">
+                0/50 Justified
+            </div>
+        </div>
+        <div class="card mt-4">
+            <ul class="list-group">
+                <li *ngFor="let result of context.results" class="list-group-item">
+                    <app-result-row [result]="result"></app-result-row>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="row mt-4">
+            <div class="col">
+                <h2><i class="pi pi-exclamation-triangle"></i> Passed Rules</h2>
+                <a href>hide justified</a>
+            </div>
+            <div class="col text-end fs-4">
+                0/50 Justified
+            </div>
+        </div>
+        <div class="card mt-4">
+            <ul class="list-group">
+                <li *ngFor="let result of context.results" class="list-group-item">
+                    <app-result-row [result]="result"></app-result-row>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
